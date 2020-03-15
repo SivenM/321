@@ -32,3 +32,7 @@ function = 10 * (a ** 2).sum()
 function.backward() # backward() считает производные фукции
 
 print(a.grad, '<- gradient')
+
+alpha = 0.01
+a.data -= alpha * a.grad
+a.grad.zero_()
