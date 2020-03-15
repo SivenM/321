@@ -36,3 +36,5 @@ print(a.grad, '<- gradient')
 alpha = 0.01
 a.data -= alpha * a.grad
 a.grad.zero_()
+
+"asdasdadadadadasdadasdadadasd"
